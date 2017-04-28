@@ -16,7 +16,7 @@ Why
 --------
 
 + ODC use cases requiring joining across multiple ID spaces
-+ Hydra is clunky for joining 2 data streams
++ Hydra is cumbersome for joining 2 data streams
 
 ---
 
@@ -31,10 +31,20 @@ Why Kafka
 Features
 --------
 
++ Fluent API
++ Stream and Table semantics
++ partitioning (sharding)
++ task distribution
++ interactive querying state stores
++ more
+
 ---
 
 How
 --------
+
+File1 -> connector -> k-Topic -> Stream Processor (join) -> k-Topic
+File2 -> connector -> k-Topic -^
 
 ---
 
