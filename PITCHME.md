@@ -44,8 +44,9 @@ How
 --------
 
 <sub>
-File1 -> connector -> k-Topic -> Stream Processor (join) -> k-Topic
-File2 -> connector -> k-Topic -^
+File1 -> connector -> k-Topic -> Stream Processor (join) |
+File2 -> connector -> k-Topic -^                         |
+                                                k-Topic <|
 </sub>
 
 ---
