@@ -21,7 +21,7 @@ Why
 ---
 
 Why Kafka
-=========
+--------
 
 + Hydra already integrates with Kafka
 + we already use Kafka message queues
@@ -29,22 +29,22 @@ Why Kafka
 ---
 
 Features
-========
+--------
 
 ---
 
 How
-===
+--------
 
 ---
 
 Code
-====
+--------
 
 +++
 
 Init
-====
+--------
 
 ```java
         // In the subsequent lines we define the processing topology of the
@@ -58,7 +58,7 @@ Init
 +++
 
 Transform
-=========
+--------
 
 ```java
         final KTable<String, String> hhidMappingsTable = hhidMappings
@@ -82,7 +82,7 @@ Transform
 +++
 
 Join (Table Lookup semantics)
-=============================
+--------
 
 ```java
         final KStream<String, String> sdtJoinHhid = sdtFeedTransform.leftJoin(hhidMappingsTable,
@@ -96,7 +96,7 @@ Join (Table Lookup semantics)
 +++
 
 Start
-=====
+--------
 
 ```java
         final KafkaStreams streams = new KafkaStreams(builder, streamsConfiguration);
@@ -109,33 +109,33 @@ Start
 ---
 
 Results
-=======
+--------
 
 +++
 
 Did it work?
-============
+--------
 
 √ yeah!
 
 +++
 
 Scalable?
-=========
+--------
 
 ???
 
 +++
 
 Performant?
-===========
+--------
 
 ???
 
 ---
 
 Next Steps
-==========
+--------
 
 + git repo
 + feature exploration
