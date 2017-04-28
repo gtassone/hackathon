@@ -43,11 +43,8 @@ Features
 How
 --------
 
-<sub>
-File1 -> connector -> k-Topic -> Stream Processor (join) |
-File2 -> connector -> k-Topic -^                         |
-                                                k-Topic <|
-</sub>
+File1 -> connector -> k-Topic -> Stream Processor (join)
+File2 -> connector -> k-Topic -^
 
 ---
 
